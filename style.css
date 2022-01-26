@@ -11,7 +11,8 @@ a {
 }
 
 .topnav>.switch {
-    margin-right: auto;
+    margin-right: 10px;
+    margin-left: auto;
     align-self: calc(center - 0.5em);
     margin-top: 8px;
     position: relative;
