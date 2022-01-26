@@ -10,9 +10,11 @@ a {
     text-decoration: inherit;
 }
 
-.switch {
+.topnav>.switch {
+    margin-right: auto;
+    align-self: calc(center - 0.5em);
+    margin-top: 8px;
     position: relative;
-    display: inline-block;
     width: 60px;
     height: 34px;
 }
@@ -62,6 +64,9 @@ input:checked+.slider:before {
 }
 
 .topnav {
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
     overflow: hidden;
     background-color: #333;
 }
@@ -69,7 +74,7 @@ input:checked+.slider:before {
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: inherit;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -82,8 +87,12 @@ input:checked+.slider:before {
 }
 
 .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: black;
+}
+
+.dark-mode .topnav a.active {
+    background-color: #003278;
+    color: inherit;
 }
 
 .topnav .icon {
@@ -111,7 +120,7 @@ input:checked+.slider:before {
     }
     .topnav.responsive a {
         float: none;
-        display: block;
+        flex-direction: column;
         text-align: left;
     }
 }
