@@ -1,9 +1,13 @@
 function changeTheme() {
     var scheme = document.getElementById("theme").value;
+    var elements = document.body
 
     if (document.getElementById("theme").checked) {
-        console.log("working")
+        console.log("away")
+        elements.classList.toggle("dark-mode");
+
     } else {
-        console.log("hi")
+        console.log("home")
+        elements.classList.toggle("dark-mode");
     }
 }
